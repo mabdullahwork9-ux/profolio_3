@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Muhammad Abdullah — DevSecOps & Cybersecurity Professional. Portfolio of secure infrastructure, CI/CD pipelines, and hands-on security projects.">
+  <title>Muhammad Abdullah | DevSecOps & Cybersecurity</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>abdullah<span class="logo-slash">/</span><span class="logo-bracket">&gt;</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="hero-greeting">DevSecOps & Cybersecurity Professional</p>
+      <h1 class="hero-name">Muhammad Abdullah</h1>
+      <p class="hero-tagline">Building secure pipelines, hardening infrastructure, and shifting security left — from code to cloud.</p>
+      <p class="hero-intro">
+        Results-driven professional specializing in automated security gates, GitOps, container hardening, and enterprise application administration. CEH-certified with hands-on experience securing mission-critical banking systems and end-to-end DevSecOps workflows on AWS and Azure.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="https://github.com/mabdullahwork9-ux" target="_blank" rel="noopener noreferrer" class="btn btn-outline">GitHub</a>
+        <a href="https://www.linkedin.com/in/muhammad-abdullah-cyber/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">LinkedIn</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">// about</span>
+        <h2 class="section-title">Security at the intersection of code, ops & infrastructure</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I currently serve as an Application Administrator Officer at Allied Bank Limited, where I securely deploy and operate mission-critical banking applications, manage IIS and Oracle WebLogic environments, and enforce access management and compliance controls.
+          </p>
+          <p>
+            My background combines full-stack engineering (MERN), API penetration testing, and practical DevSecOps: Infrastructure as Code, automated SAST/container scanning, GitOps with ArgoCD, and zero-trust network policies. I focus on embedding security early so teams can ship faster without accumulating risk.
+          </p>
+          <p>
+            Previously I worked as an Associate Software Engineer at Devsinc building production MERN and Web3 applications, and completed targeted cybersecurity simulations with AIG and ANZ covering threat analysis, packet inspection, and remediation guidance.
+          </p>
+        </div>
+        <div class="about-cards">
+          <div class="info-card">
+            <span class="info-label">Focus Areas</span>
+            <ul>
+              <li>DevSecOps & Shift-Left Security</li>
+              <li>CI/CD Pipeline Hardening</li>
+              <li>Container & Kubernetes Security</li>
+              <li>Vulnerability Management</li>
+              <li>Enterprise Application Admin</li>
+            </ul>
+          </div>
+          <div class="info-card">
+            <span class="info-label">Core Stack</span>
+            <ul>
+              <li>Terraform · AWS · Azure · EKS</li>
+              <li>Jenkins · GitHub Actions · ArgoCD</li>
+              <li>Docker · Trivy · SonarQube · Checkov</li>
+              <li>OpenVAS · Azure Sentinel · SIEM</li>
+              <li>Python · PowerShell · MERN</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">// projects</span>
+        <h2 class="section-title">Selected work & security implementations</h2>
+        <p class="section-desc">Hands-on projects that demonstrate end-to-end secure delivery, infrastructure automation, and practical cybersecurity analysis.</p>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+        <!-- Project cards injected by JS or static -->
+        <article class="project-card" data-project="tetris">
+          <div class="project-card-header">
+            <span class="project-tag">DevSecOps</span>
+            <span class="project-tag">AWS · EKS</span>
+          </div>
+          <h3>Tetris DevSecOps Pipeline</h3>
+          <p>Full GitOps + security-gated CI/CD pipeline deploying a containerized application to Amazon EKS with automated SAST, image scanning, and zero-drift reconciliation.</p>
+          <div class="project-tech">
+            <span>Terraform</span><span>Jenkins</span><span>ArgoCD</span><span>Trivy</span><span>SonarQube</span>
+          </div>
+          <button class="project-link" data-project="tetris">View details →</button>
+        </article>
+
+        <article class="project-card" data-project="cicd">
+          <div class="project-card-header">
+            <span class="project-tag">CI/CD</span>
+            <span class="project-tag">GitHub Actions</span>
+          </div>
+          <h3>Secure CI/CD Pipeline on AWS</h3>
+          <p>End-to-end GitHub Actions pipeline for a multi-tier containerized app with secret scanning, linting, and controlled Continuous Delivery with manual approval gates.</p>
+          <div class="project-tech">
+            <span>GitHub Actions</span><span>Docker</span><span>Gitleaks</span><span>AWS EC2</span>
+          </div>
+          <button class="project-link" data-project="cicd">View details →</button>
+        </article>
+
+        <article class="project-card" data-project="jerney">
+          <div class="project-card-header">
+            <span class="project-tag">Production</span>
+            <span class="project-tag">GitOps</span>
+          </div>
+          <h3>Jerney — Secure Three-Tier Blog Platform</h3>
+          <p>Production-grade three-tier application built with private networking, multi-stage hardened containers, 10-stage security pipeline, and Argo CD continuous delivery on EKS.</p>
+          <div class="project-tech">
+            <span>Terraform</span><span>EKS</span><span>Argo CD</span><span>Checkov</span><span>NetworkPolicies</span>
+          </div>
+          <button class="project-link" data-project="jerney">View details →</button>
+        </article>
+
+        <article class="project-card" data-project="vuln">
+          <div class="project-card-header">
+            <span class="project-tag">Vulnerability Mgmt</span>
+            <span class="project-tag">Azure</span>
+          </div>
+          <h3>Cybersecurity Vulnerability Management</h3>
+          <p>Designed a lab environment with OpenVAS, performed authenticated and unauthenticated scans against a deliberately vulnerable Windows host, and verified remediation.</p>
+          <div class="project-tech">
+            <span>OpenVAS</span><span>Azure</span><span>Windows</span><span>Vulnerability Scanning</span>
+          </div>
+          <button class="project-link" data-project="vuln">View details →</button>
+        </article>
+
+        <article class="project-card" data-project="siem">
+          <div class="project-card-header">
+            <span class="project-tag">SIEM</span>
+            <span class="project-tag">Azure Sentinel</span>
+          </div>
+          <h3>SIEM Dashboard — Azure Sentinel</h3>
+          <p>Custom log pipeline extracting geolocation from Windows Event Viewer metadata and visualizing RDP brute-force attack origins on a global map inside Azure Sentinel.</p>
+          <div class="project-tech">
+            <span>PowerShell</span><span>Log Analytics</span><span>Azure Sentinel</span><span>GeoIP</span>
+          </div>
+          <button class="project-link" data-project="siem">View details →</button>
+        </article>
+
+        <article class="project-card" data-project="malware">
+          <div class="project-card-header">
+            <span class="project-tag">Malware Analysis</span>
+            <span class="project-tag">Static</span>
+          </div>
+          <h3>Static Malware Analysis — RedLine</h3>
+          <p>Detailed static analysis of the RedLine password-stealing Trojan, documenting capabilities, indicators, and protective recommendations across Windows, macOS, and Linux targets.</p>
+          <div class="project-tech">
+            <span>Static Analysis</span><span>Malware</span><span>Threat Intel</span>
+          </div>
+          <button class="project-link" data-project="malware">View details →</button>
+        </article>
+
+        <article class="project-card" data-project="netflix">
+          <div class="project-card-header">
+            <span class="project-tag">DevSecOps</span>
+            <span class="project-tag">Monitoring</span>
+          </div>
+          <h3>Netflix Clone with DevSecOps Practices</h3>
+          <p>Jenkins-driven DevSecOps pipeline for a Netflix clone on AWS with SonarQube, Trivy, Prometheus/Grafana monitoring, and ArgoCD + Helm GitOps deployment to EKS.</p>
+          <div class="project-tech">
+            <span>Jenkins</span><span>SonarQube</span><span>Prometheus</span><span>ArgoCD</span><span>Helm</span>
+          </div>
+          <button class="project-link" data-project="netflix">View details →</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section class="section certifications" id="certifications">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">// credentials</span>
+        <h2 class="section-title">Certifications & Recognition</h2>
+      </div>
+
+      <div class="certs-grid">
+        <div class="cert-card featured">
+          <div class="cert-issuer">EC-Council</div>
+          <h3>Certified Ethical Hacker (CEH)</h3>
+          <p class="cert-meta">Issued May 2025 · Valid through Jun 2026</p>
+          <p class="cert-skills">Threat identification · Social engineering · Malware · Web exploits · Vulnerability scanning</p>
+          <span class="cert-badge">Primary Credential</span>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-issuer">Google / Coursera</div>
+          <h3>Google Cybersecurity Certificate</h3>
+          <p class="cert-meta">Issued Oct 2023 · Credential ID gkyY9Qsp</p>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-issuer">Google</div>
+          <h3>Completion Certificate for Google Cybersecurity</h3>
+          <p class="cert-meta">Issued Oct 2023 · Credential ID PBXT484XEERF</p>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-issuer">Google</div>
+          <h3>Automate Cybersecurity Tasks with Python</h3>
+          <p class="cert-meta">Issued Oct 2023 · Credential ID UXNNZVEE6SHU</p>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-issuer">Google</div>
+          <h3>Sound the Alarm: Detection and Response</h3>
+          <p class="cert-meta">Issued Oct 2023 · Credential ID 6Y9JAUCFNB8B</p>
+          <p class="cert-skills">SIEM · IDS · Incident response</p>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-issuer">Google</div>
+          <h3>Assets, Threats, and Vulnerabilities</h3>
+          <p class="cert-meta">Issued Oct 2023 · Credential ID 8HJ3UZDC5M6C</p>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-issuer">Google</div>
+          <h3>Tools of the Trade: Linux and SQL</h3>
+          <p class="cert-meta">Issued Sep 2023</p>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-issuer">Google</div>
+          <h3>Connect and Protect: Networks and Network Security</h3>
+          <p class="cert-meta">Issued Aug 2023</p>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-issuer">Google</div>
+          <h3>Play It Safe: Manage Security Risks</h3>
+          <p class="cert-meta">Issued Aug 2023</p>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-issuer">Google Career Certificates</div>
+          <h3>Foundations of Cybersecurity</h3>
+          <p class="cert-meta">Issued Jul 2023</p>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-issuer">Hack The Box</div>
+          <h3>Meow has been Pwned</h3>
+          <p class="cert-meta">Hands-on challenge completion</p>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-issuer">SOFTEC'22</div>
+          <h3>Artificial Intelligence Competition</h3>
+          <p class="cert-meta">1st Place — BrainStrom team</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">// contact</span>
+        <h2 class="section-title">Let's connect</h2>
+        <p class="section-desc">Open to opportunities in DevSecOps, application security, and secure infrastructure roles.</p>
+      </div>
+      <div class="contact-links">
+        <a href="mailto:mabdullah2510work@gmail.com" class="contact-item">
+          <span class="contact-icon">✉</span>
+          <span>mabdullah2510work@gmail.com</span>
+        </a>
+        <a href="https://github.com/mabdullahwork9-ux" target="_blank" rel="noopener noreferrer" class="contact-item">
+          <span class="contact-icon">⌘</span>
+          <span>github.com/mabdullahwork9-ux</span>
+        </a>
+        <a href="https://www.linkedin.com/in/muhammad-abdullah-cyber/" target="_blank" rel="noopener noreferrer" class="contact-item">
+          <span class="contact-icon">in</span>
+          <span>linkedin.com/in/muhammad-abdullah-cyber</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Built as a static site · Deployed on GitHub Pages</p>
+      <p class="footer-note">© 2025 Muhammad Abdullah</p>
+    </div>
+  </footer>
+
+  <!-- Project Modal -->
+  <div class="modal" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-overlay" data-close></div>
+    <div class="modal-content">
+      <button class="modal-close" data-close aria-label="Close">&times;</button>
+      <div class="modal-body" id="modalBody">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
